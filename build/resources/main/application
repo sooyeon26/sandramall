@@ -1,0 +1,13 @@
+spring:
+  datasource:
+driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/sandramall?useUnicode=true&characterEncoding=utf8&autoReconnect=true&useSSL=false
+    username: admin
+    password: sandramall!
+    data-username: admin
+    data-password: password
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
