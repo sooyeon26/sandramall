@@ -54,7 +54,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -62,6 +62,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\sooye\IdeaProjects\sandramall" />
       <recent name="C:\Users\sooye\IdeaProjects\sandramall\src\main\resources" />
       <recent name="C:\Users\sooye\IdeaProjects\sandramall\src\main\kotlin\com\sooyeon\sandramall" />
     </key>
@@ -114,30 +115,34 @@
       <screen x="-2560" y="-358" width="2560" height="1400" />
     </state>
     <state x="-1343" y="116" key="FileChooserDialogImpl/0.0.1536.824/-2560.-358.2560.1400@-2560.-358.2560.1400" timestamp="1599490831914" />
-    <state width="1849" height="523" key="GridCell.Tab.0.bottom" timestamp="1599652795096">
+    <state x="-989" y="206" key="Github.ShareDialog" timestamp="1599654107938">
       <screen x="-2560" y="-358" width="2560" height="1400" />
     </state>
-    <state width="1849" height="523" key="GridCell.Tab.0.bottom/0.0.1536.824/-2560.-358.2560.1400@-2560.-358.2560.1400" timestamp="1599652795096" />
-    <state width="1849" height="523" key="GridCell.Tab.0.center" timestamp="1599652795095">
+    <state x="-989" y="206" key="Github.ShareDialog/0.0.1536.824/-2560.-358.2560.1400@-2560.-358.2560.1400" timestamp="1599654107938" />
+    <state width="1588" height="523" key="GridCell.Tab.0.bottom" timestamp="1599653510165">
       <screen x="-2560" y="-358" width="2560" height="1400" />
     </state>
-    <state width="1849" height="523" key="GridCell.Tab.0.center/0.0.1536.824/-2560.-358.2560.1400@-2560.-358.2560.1400" timestamp="1599652795095" />
-    <state width="1849" height="523" key="GridCell.Tab.0.left" timestamp="1599652795095">
+    <state width="1588" height="523" key="GridCell.Tab.0.bottom/0.0.1536.824/-2560.-358.2560.1400@-2560.-358.2560.1400" timestamp="1599653510165" />
+    <state width="1588" height="523" key="GridCell.Tab.0.center" timestamp="1599653510165">
       <screen x="-2560" y="-358" width="2560" height="1400" />
     </state>
-    <state width="1849" height="523" key="GridCell.Tab.0.left/0.0.1536.824/-2560.-358.2560.1400@-2560.-358.2560.1400" timestamp="1599652795095" />
-    <state width="1849" height="523" key="GridCell.Tab.0.right" timestamp="1599652795096">
+    <state width="1588" height="523" key="GridCell.Tab.0.center/0.0.1536.824/-2560.-358.2560.1400@-2560.-358.2560.1400" timestamp="1599653510165" />
+    <state width="1588" height="523" key="GridCell.Tab.0.left" timestamp="1599653510165">
       <screen x="-2560" y="-358" width="2560" height="1400" />
     </state>
-    <state width="1849" height="523" key="GridCell.Tab.0.right/0.0.1536.824/-2560.-358.2560.1400@-2560.-358.2560.1400" timestamp="1599652795096" />
+    <state width="1588" height="523" key="GridCell.Tab.0.left/0.0.1536.824/-2560.-358.2560.1400@-2560.-358.2560.1400" timestamp="1599653510165" />
+    <state width="1588" height="523" key="GridCell.Tab.0.right" timestamp="1599653510165">
+      <screen x="-2560" y="-358" width="2560" height="1400" />
+    </state>
+    <state width="1588" height="523" key="GridCell.Tab.0.right/0.0.1536.824/-2560.-358.2560.1400@-2560.-358.2560.1400" timestamp="1599653510165" />
     <state x="-1456" y="8" key="SettingsEditor" timestamp="1599652648689">
       <screen x="-2560" y="-358" width="2560" height="1400" />
     </state>
     <state x="-1456" y="8" key="SettingsEditor/0.0.1536.824/-2560.-358.2560.1400@-2560.-358.2560.1400" timestamp="1599652648689" />
-    <state x="-1440" y="-253" width="1299" height="1124" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1599652773393">
+    <state x="-1440" y="-253" width="1299" height="1124" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1599654148165">
       <screen x="-2560" y="-358" width="2560" height="1400" />
     </state>
-    <state x="-1440" y="-253" width="1299" height="1124" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.824/-2560.-358.2560.1400@-2560.-358.2560.1400" timestamp="1599652773393" />
+    <state x="-1440" y="-253" width="1299" height="1124" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.824/-2560.-358.2560.1400@-2560.-358.2560.1400" timestamp="1599654148165" />
     <state x="-1377" y="-57" key="new project wizard" timestamp="1599574450315">
       <screen x="-2560" y="-358" width="2560" height="1400" />
     </state>

@@ -1,9 +1,8 @@
 spring:
   datasource:
-driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/sandramall?useUnicode=true&characterEncoding=utf8&autoReconnect=true&useSSL=false
+    url: jdbc:mysql://sandramall-db-dev-01.cdphojwqewdc.us-east-2.rds.amazonaws.com:3306/sandramall
     username: admin
-    password: sandramall!
+    password: password
     data-username: admin
     data-password: password
     driver-class-name: com.mysql.jdbc.Driver
