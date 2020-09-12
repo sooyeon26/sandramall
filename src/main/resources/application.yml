@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    url: jdbc:mysql://sandramall-db-dev-01.cdphojwqewdc.us-east-2.rds.amazonaws.com:3306/sandramall
+    username: admin
+    password: password
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
