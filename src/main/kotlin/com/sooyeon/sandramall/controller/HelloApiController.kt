@@ -1,5 +1,6 @@
-package com.sooyeon.sandramall
+package com.sooyeon.sandramall.controller
 
+import com.sooyeon.sandramall.ApiResponse
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RestController
 
