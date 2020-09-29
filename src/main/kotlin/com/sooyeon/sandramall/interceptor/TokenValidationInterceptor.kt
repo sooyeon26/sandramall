@@ -31,7 +31,7 @@ class TokenValidationInterceptor @Autowired constructor(
             }
             return true
         } else {
-            val grantType = request.getParameter("grant_type")
+            val grantType = request.getParameter(GRANT_TYPE)
             val token = extractToken(authHeader)
             return handleToken(grantType, token, response)
         }
@@ -39,25 +39,24 @@ class TokenValidationInterceptor @Autowired constructor(
     }
 
     private fun handleToken(
-            grantType: String,
-            token: String,
-            response: HttpServletResponse) =
-            try {
-                val jwt = when (grantType) {
-                    GRANT_TYPE_REFRESH -> JwtUtil.verifyRefresh(token)
-                    else -> JwtUtil.verify(token)
-                }
-                val email = JwtUtil.extractEmail(jwt)
+                        grantType: String?,
+                    token: String,
+                    response: HttpServletResponse) =
+                    try {
+                        val jwt = when (grantType) {
+                            GRANT_TYPE_REFRESH -> JwtUtil.verifyRefresh(token)
+                            else -> JwtUtil.verify(token)
+                        }
+                        val email = JwtUtil.extractEmail(jwt)
                 userContextHolder.set(email)
                 true
             } catch (e: Exception) {
-                logger.error("failed to validate token $token", e)
                 response.sendError(401)
                 false
             }
 
     private fun extractToken(token: String) =
-            token.replace(BEARER, "").trim()
+        token.replace(BEARER, "").trim()
 
     override fun postHandle(
             request: HttpServletRequest,
@@ -69,8 +68,8 @@ class TokenValidationInterceptor @Autowired constructor(
 
     companion object {
 
-        private const val AUTHORIZATION = "authorization"
-        private const val BEARER = "bearer"
+        private const val AUTHORIZATION = "Authorization"
+        private const val BEARER = "Bearer"
         private const val GRANT_TYPE = "grant_type"
         const val GRANT_TYPE_REFRESH = "refresh_token"
 
