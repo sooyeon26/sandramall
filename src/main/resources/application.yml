@@ -8,3 +8,14 @@ spring:
     hibernate:
       ddl-auto: update
     database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+
+  resources:
+    static-locations:
+
+  servlet:
+    multipart:
+      max-file-size: 20MB
+
+sandramall:
+  file-upload:
+    default-dir: C:\sandramall
