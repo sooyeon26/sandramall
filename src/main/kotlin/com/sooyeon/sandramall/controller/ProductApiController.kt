@@ -1,12 +1,14 @@
 package com.sooyeon.sandramall.controller
 
 import com.sooyeon.sandramall.ApiResponse
+import com.sooyeon.sandramall.SandraException
 import com.sooyeon.sandramall.domain.product.Product
 import com.sooyeon.sandramall.domain.product.ProductService
 import com.sooyeon.sandramall.domain.product.registration.ProductImageService
 import com.sooyeon.sandramall.domain.product.registration.ProductRegistrationRequest
 import com.sooyeon.sandramall.domain.product.registration.ProductRegistrationService
 import com.sooyeon.sandramall.domain.product.toProductListItemResponse
+import com.sooyeon.sandramall.domain.product.toProductResponse
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.web.bind.annotation.*
 import org.springframework.web.multipart.MultipartFile
@@ -29,10 +31,15 @@ class ProductApiController @Autowired constructor(
         @RequestBody request: ProductRegistrationRequest
     ) = ApiResponse.ok(productRegistration.register(request))
 
+    @GetMapping("/products/{id}")
+    fun get(@PathVariable id: Long) = productService.get(id)?.let {
+        ApiResponse.ok(it.toProductResponse())
+    } ?: throw SandraException("cannot find product info")
+
     @GetMapping("/products")
     fun search(
         @RequestParam productId: Long,
-        @RequestParam(required=false) categoryId: Int?,
+        @RequestParam(required = false) categoryId: Int?,
         @RequestParam direction: String,
         @RequestParam(required = false) limit: Int?
     ) = productService
